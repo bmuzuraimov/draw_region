@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Long range</title>
+</head>
+<body>
+	<aside class="menu-bar">
+	</aside>
+	<div class="main">
+		<div class="main__header">
+			<h2>Camera 01</h2>
+		</div>
+		<div class="main__panel">
+			<div class="panel__bar">
+				<h6>Count</h6>
+				<hr>
+				<table class="panel__tble1">
+				  <tr>
+				    <td class="column1">With occlusion</td>
+				    <td class="column2">2610</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">Tolerated Threshold</td>
+				    <td class="column2">0.5</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">Total detection</td>
+				    <td class="column2">2530</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">Detection inside</td>
+				    <td class="column2">810</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">Detection inside</td>
+				    <td class="column2">1733</td>
+				  </tr>
+				  <tr>
+				  	<td class="column1"><label for="face-mask">Face mask</label></td>
+				    <td class="column2"><input type="checkbox" id="face-mask" class="check-box"></td>
+				  </tr>
+				  <tr>
+				  	<td class="column1"><label for="face-mask">Draw regiong</label></td>
+				    <td class="column2"><input type="checkbox" id="draw-region" class="check-box"></td>
+				  </tr>
+				</table>
+				<hr>
+				<button class="panel__btn">Set Count Region</button>
+				<table class="panel__tble2">
+				  <tr>
+				    <th class="column1">System Status</th>
+				    <th class="column2">Healthy</th>
+				  </tr>
+				  <tr>
+				    <td class="column1">CPU clock frequency</td>
+				    <td class="column2">1733</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">CPU core temperature</td>
+				    <td class="column2">2530</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">GPU clock frequency</td>
+				    <td class="column2">810</td>
+				  </tr>
+				  <tr>
+				    <td class="column1">GPU core temperature</td>
+				    <td class="column2">810</td>
+				  </tr>				
+				</table>
+			</div>	
+			<div class="panel__video">
+				<video controls autoplay="true" src="crowded-people.mp4" id="streaming-video"></video>
+				<div class="face-mask-rect hidden"></div>
+				<div class="face-mask-rect hidden"></div>
+				<div class="face-mask-rect hidden"></div>
+				<div class="face-mask-rect hidden"></div>
+				<svg class="region-line hidden" width="100%" height="100%"><circle cx="10" cy="10" r="2"/></svg>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script/jquery.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>
