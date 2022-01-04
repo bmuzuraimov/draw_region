@@ -42,13 +42,9 @@
 				  	<td class="column1"><label for="face-mask">Face mask</label></td>
 				    <td class="column2"><input type="checkbox" id="face-mask" class="check-box"></td>
 				  </tr>
-				  <tr>
-				  	<td class="column1"><label for="face-mask">Draw regiong</label></td>
-				    <td class="column2"><input type="checkbox" id="draw-region" class="check-box"></td>
-				  </tr>
 				</table>
 				<hr>
-				<button class="panel__btn">Set Count Region</button>
+				<button class="panel__btn" id="draw-btn">Set Count Region</button>
 				<table class="panel__tble2">
 				  <tr>
 				    <th class="column1">System Status</th>
@@ -78,7 +74,7 @@
 				<div class="face-mask-rect hidden"></div>
 				<div class="face-mask-rect hidden"></div>
 				<div class="face-mask-rect hidden"></div>
-				<svg class="region-line hidden" width="100%" height="100%"><circle cx="10" cy="10" r="2"/></svg>
+				<svg class="region-line hidden" width="100%" height="100%"><circle id="cursor" cx="10" cy="10" r="2"/></svg>
 			</div>
 		</div>
 	</div>
